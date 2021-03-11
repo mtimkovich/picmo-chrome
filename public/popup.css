@@ -1,0 +1,8 @@
+html, body {
+    height: 450px;
+    margin-bottom: 45px;
+    margin-right: 8px;
+    overflow: auto;
+    position: relative;
+    width: 400px;
+}
