@@ -1,5 +1,5 @@
 html, body {
-    height: 450px;
+    height: 470px;
     margin-bottom: 45px;
     margin-right: 8px;
     overflow: auto;
@@ -8,5 +8,16 @@ html, body {
 }
 
 #output {
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    font-size: 0.85em;
+    outline: none;
+    padding-right: 2em;
+    padding: 0.5em 2.25em 0.5em 0.5em;
     width: 100%;
+}
+
+#output:focus {
+    border: 1px solid var(--search-focus-border-color);
 }

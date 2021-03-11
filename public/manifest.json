@@ -13,12 +13,7 @@
     "default_title": "Emoji Button Chrome",
     "default_popup": "popup.html"
   },
-  "_execute_browser_action": {
-      "suggested_key": {
-          "default": "Ctrl+."
-      }
-  },
   "permissions": [
-      "clipboardWrite"
+    "clipboardWrite"
   ]
 }
