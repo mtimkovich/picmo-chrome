@@ -8,6 +8,9 @@ This is a Chrome extension to quickly search and copy emoji using the excellent 
 
 - Emoji search.
 - Recently used emoji.
+- Completely keyboard accessible.
+  - Open the picker with `Ctrl+Period`.
+  - Navigate with Tab and the arrow keys.
 - Only requires the `clipboardWrite` permission.
 - Completely open source, so I won't be selling your personal data.
 
@@ -19,7 +22,7 @@ This is a Chrome extension to quickly search and copy emoji using the excellent 
 
 Suggestions and pull requests are welcomed!
 
-## Special Thanks
+## Acknowledgements
 
 * [Emoji Button][eb] for doing all the hard work.
 * [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli).
