@@ -11,8 +11,8 @@ This is a Chrome extension to quickly search and copy emoji using the excellent 
 - Completely keyboard accessible.
   - Open the picker with `Ctrl+Period`.
   - Navigate with Tab and the arrow keys.
-- Only requires the `clipboardWrite` permission.
 - Completely open source, so I won't be selling your personal data.
+  - Only requires the `clipboardWrite` permission.
 
 ## Install
 
