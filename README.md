@@ -1,17 +1,32 @@
-# <img src="public/icons/icon_48.png" width="45" align="left"> My Extension
+# <img src="public/icons/icon_48.png" width="45" align="left"> Emoji Button Chrome
 
-My Chrome Extension
+This is a Chrome extension to quickly search and copy emoji using the excellent [Emoji Button][eb] tool.
+
+<img src="img/preview.png">
 
 ## Features
 
-- Feature 1
-- Feature 2
+- Emoji search.
+- Recently used emoji.
+- Only requires the `clipboardWrite` permission.
+- Completely open source, so I won't be selling your personal data.
 
 ## Install
 
-[**Chrome** extension]() <!-- TODO: Add chrome extension link inside parenthesis -->
+TBD
 
 ## Contribution
 
-Suggestions and pull requests are welcomed!.
+Suggestions and pull requests are welcomed!
 
+## Special Thanks
+
+* [Emoji Button][eb] for doing all the hard work.
+* [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli).
+* I stole some code from [chromoji](https://github.com/smeeckaert/chromoji).
+
+## Author
+
+Max Timkovich
+
+[eb]: https://emoji-button.js.org/
