@@ -4,5 +4,9 @@ html, body {
     margin-right: 8px;
     overflow: auto;
     position: relative;
-    width: 400px;
+    width: 390px;
+}
+
+#output {
+    width: 100%;
 }

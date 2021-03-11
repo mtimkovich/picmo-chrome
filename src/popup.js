@@ -2,18 +2,40 @@
 
 import { EmojiButton } from '@joeattardi/emoji-button';
 
+// The copy text input.
+const copyPlugin = {
+    render(picker) {
+        const input = document.createElement('input');
+        input.id = 'output';
+        input.placeholder = 'Copy from here';
+
+        return input;
+    }
+};
+
+// Make ESC close the whole popup.
+document.onkeydown = function(e) {
+    if (!e) e = window.event;
+
+    if (e.keyCode == '27' || e.charCode == '27') {
+        window.close();
+    }
+}
+
 const picker = new EmojiButton({
     autoHide: false,
-    showPreview: false,
+    initialCategory: 'recents',
+    plugins: [copyPlugin],
+    theme: 'auto',
 });
-const trigger = document.querySelector('#emoji-trigger');
 
 picker.on('emoji', selection => {
-  // handle the selected emoji here
-  console.log(selection.emoji);
+    output.value += selection.emoji;
+    output.select();
+    document.execCommand('copy');
 });
 
-// This fixes some display issue I was having.
 setTimeout(() => {
+    const trigger = document.querySelector('#trigger');
     picker.showPicker(trigger);
-}, 1);
+}, 0);
