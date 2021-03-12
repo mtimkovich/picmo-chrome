@@ -7,7 +7,7 @@
     "clean": "rm -r build; exit 0",
     "watch": "npm run clean && webpack --mode=development --watch --config config/webpack.config.js",
     "build": "npm run clean && webpack --mode=production --config config/webpack.config.js",
-    "zip": "npm run clean && rm *.zip && npm run build && cd build && zip -r ../$npm_package_name-$npm_package_version.zip *"
+    "zip": "npm run clean; rm *.zip; npm run build && cd build && zip -r ../$npm_package_name-$npm_package_version.zip *"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^6.4.1",
