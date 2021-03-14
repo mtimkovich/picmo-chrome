@@ -11,7 +11,7 @@ This is a Chrome extension to quickly search and copy emoji using the excellent 
 - Completely keyboard accessible.
   - Open the picker with `Ctrl+Period`.
   - Navigate with Tab and the arrow keys.
-- Use native or Twitter emoji.
+- Choose between native or Twitter style emoji.
 - Completely open source, so I won't be selling your personal data.
   - Only requires the `clipboardWrite` and `storage` permissions.
 - Only ~170 KB in size.
