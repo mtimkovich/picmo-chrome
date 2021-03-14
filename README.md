@@ -11,9 +11,10 @@ This is a Chrome extension to quickly search and copy emoji using the excellent 
 - Completely keyboard accessible.
   - Open the picker with `Ctrl+Period`.
   - Navigate with Tab and the arrow keys.
+- Use native or Twitter emoji.
 - Completely open source, so I won't be selling your personal data.
-  - Only requires the `clipboardWrite` permission.
-- Only 168 KB in size.
+  - Only requires the `clipboardWrite` and `storage` permissions.
+- Only ~170 KB in size.
 
 ## Installation Methods
 
@@ -36,6 +37,8 @@ Suggestions and pull requests are welcomed!
 * [Emoji Button][eb] for doing all the hard work.
 * [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli).
 * I stole some ideas from [chromoji](https://github.com/smeeckaert/chromoji).
+
+If you're on Windows, I recommend [Twemoji for Chrome](https://chrome.google.com/webstore/detail/twemoji-for-chrome/fopgafjdjlongoeblobbafbnapafcicg?hl=en) to replace the horrific Windows emoji.
 
 ## Author
 

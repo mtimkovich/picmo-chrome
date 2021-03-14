@@ -2,16 +2,39 @@
 
 import { EmojiButton } from '@joeattardi/emoji-button';
 
-// The copy text input.
-const copyPlugin = {
-    render(picker) {
-        const input = document.createElement('input');
-        input.id = 'output';
-        input.placeholder = 'Copy from here';
+function createPicker(items) {
+    // The copy text input field.
+    const copyPlugin = {
+        render(picker) {
+            const input = document.createElement('input');
+            input.id = 'output';
+            input.placeholder = 'Copy from here';
 
-        return input;
-    }
-};
+            return input;
+        }
+    };
+
+    const picker = new EmojiButton({
+        autoHide: false,
+        initialCategory: 'recents',
+        plugins: [copyPlugin],
+        style: items.style,
+        theme: 'auto',
+    });
+
+    picker.on('emoji', selection => {
+        output.value += selection.emoji;
+        output.select();
+        document.execCommand('copy');
+    });
+
+    picker.on('hidden', () => {
+        window.close();
+    });
+
+    const trigger = document.querySelector('#trigger');
+    picker.showPicker(trigger);
+}
 
 // Make ESC close the whole popup.
 document.onkeydown = function(e) {
@@ -22,25 +45,4 @@ document.onkeydown = function(e) {
     }
 }
 
-const picker = new EmojiButton({
-    autoHide: false,
-    initialCategory: 'recents',
-    plugins: [copyPlugin],
-    style: 'twemoji',
-    theme: 'auto',
-});
-
-picker.on('emoji', selection => {
-    output.value += selection.emoji;
-    output.select();
-    document.execCommand('copy');
-});
-
-picker.on('hidden', () => {
-    window.close();
-});
-
-setTimeout(() => {
-    const trigger = document.querySelector('#trigger');
-    picker.showPicker(trigger);
-}, 0);
+chrome.storage.sync.get(null, createPicker);
