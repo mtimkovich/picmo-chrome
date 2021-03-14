@@ -45,4 +45,4 @@ document.onkeydown = function(e) {
     }
 }
 
-chrome.storage.sync.get(null, createPicker);
+chrome.storage.local.get(null, createPicker);
