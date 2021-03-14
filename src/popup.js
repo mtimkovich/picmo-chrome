@@ -26,6 +26,7 @@ const picker = new EmojiButton({
     autoHide: false,
     initialCategory: 'recents',
     plugins: [copyPlugin],
+    style: 'twemoji',
     theme: 'auto',
 });
 
@@ -33,6 +34,10 @@ picker.on('emoji', selection => {
     output.value += selection.emoji;
     output.select();
     document.execCommand('copy');
+});
+
+picker.on('hidden', () => {
+    window.close();
 });
 
 setTimeout(() => {
