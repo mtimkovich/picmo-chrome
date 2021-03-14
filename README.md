@@ -13,6 +13,7 @@ This is a Chrome extension to quickly search and copy emoji using the excellent 
   - Navigate with Tab and the arrow keys.
 - Completely open source, so I won't be selling your personal data.
   - Only requires the `clipboardWrite` permission.
+- Only 168 KB in size.
 
 ## Installation Methods
 
