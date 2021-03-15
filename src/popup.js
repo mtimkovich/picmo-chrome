@@ -15,7 +15,7 @@ function createPicker(items) {
     };
 
     const picker = new EmojiButton({
-        autoHide: false,
+        autoHide: items.autoHide,
         initialCategory: 'recents',
         plugins: [copyPlugin],
         style: items.style,

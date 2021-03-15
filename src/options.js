@@ -1,8 +1,10 @@
 // Saves options to chrome.storage.
 function save_options() {
   const style = document.getElementById('style').value;
+  const autoHide = document.getElementById('autoHide').checked;
   chrome.storage.local.set({
     style,
+    autoHide,
   }, () => {
     // Update status to let user know options were saved.
     const status = document.getElementById('status');
@@ -18,8 +20,10 @@ function save_options() {
 function restore_options() {
   chrome.storage.local.get({
     style: 'native',
+    autoHide: true,
   }, items => {
     document.getElementById('style').value = items.style;
+    document.getElementById('autoHide').checked = items.autoHide;
   });
 }
 
