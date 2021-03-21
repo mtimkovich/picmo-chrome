@@ -4,19 +4,19 @@ This is a Chrome extension to quickly search and copy emoji using the excellent 
 
 <img src="img/preview.png" width="400px">
 
-## Features
+## ✔️ Features
 
-- Emoji search.
-- Recently used emoji.
-- Completely keyboard accessible.
+- 🔍 Emoji search.
+- 📜 Recently used emoji.
+- ⌨️ Completely keyboard accessible.
   - Open the picker with `Ctrl+Period`.
   - Navigate with Tab and the arrow keys.
-- Choose between native or Twitter style emoji.
-- Completely open source, so I won't be selling your personal data.
+- 🐦 Choose between native or Twitter style emoji.
+- 💽 Completely open source, so I won't be selling your personal data.
   - Only requires the `clipboardWrite` and `storage` permissions.
-- Only ~170 KB in size.
+- 🐭 Only ~170 KB in size.
 
-## Installation Methods
+## 💾 Installation Methods
 
 1. [Download from the Chrome Web Store.](https://chrome.google.com/webstore/detail/emoji-button-chrome/ehmacpiolcofcljbiogbjbojdeiiekdi)
 2. Download the latest version from [releases](https://github.com/mtimkovich/emoji-button-chrome/releases).
@@ -32,7 +32,7 @@ $ npm run build
 
 Suggestions and pull requests are welcomed!
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 * [Emoji Button][eb] for doing all the hard work.
 * [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli).
@@ -40,7 +40,7 @@ Suggestions and pull requests are welcomed!
 
 If you're on Windows, I recommend [Twemoji for Chrome](https://chrome.google.com/webstore/detail/twemoji-for-chrome/fopgafjdjlongoeblobbafbnapafcicg?hl=en) to replace the horrific Windows emoji.
 
-## Author
+## 🤠 Author
 
 Max Timkovich
 
