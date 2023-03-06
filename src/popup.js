@@ -1,4 +1,5 @@
-import { createPicker } from 'picmo';
+import { createPicker, NativeRenderer } from 'picmo';
+import { TwemojiRenderer } from '@picmo/renderer-twemoji';
 
 // https://stackoverflow.com/a/71336017
 function copyToClipboard(textToCopy) {
@@ -10,14 +11,26 @@ function copyToClipboard(textToCopy) {
   document.body.removeChild(el);
 }
 
-const rootElement = document.querySelector('#trigger');
-const picker = createPicker({
-  rootElement,
-  autoFocus: 'search',
-  initialCategory: 'recents'
-});
+function main(items) {
+    let renderer;
+    if (items.style === 'native') {
+        renderer = new NativeRenderer();
+    } else {
+        renderer = new TwemojiRenderer();
+    }
 
-picker.addEventListener('emoji:select', event => {
-  copyToClipboard(event.emoji);
-  window.close();
-});
+    const rootElement = document.querySelector('#trigger');
+    const picker = createPicker({
+        rootElement,
+        autoFocus: 'search',
+        initialCategory: 'recents',
+        renderer,
+    });
+
+    picker.addEventListener('emoji:select', event => {
+        copyToClipboard(event.emoji);
+        window.close();
+    });
+}
+
+chrome.storage.local.get(null, main);

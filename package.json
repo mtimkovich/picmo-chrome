@@ -1,7 +1,7 @@
 {
     "name": "PicMo Chrome",
     "description": "Emoji picker from Chrome built off of PicMo",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "homepage": "https://github.com/mtimkovich/picmo-chrome",
     "author": "Max Timkovich",
     "repository": {
@@ -42,11 +42,16 @@
         "js_bundles": [
             {
                 "name": "popup",
-                "src": "./src/**/*.js"
+                "src": "./src/popup.js"
+            },
+            {
+                "name": "options",
+                "src": "./src/options.js"
             }
         ]
     },
     "dependencies": {
+        "@picmo/renderer-twemoji": "^5.8.1",
         "picmo": "^5.8.1"
     }
 }
