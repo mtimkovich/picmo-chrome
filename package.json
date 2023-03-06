@@ -1,12 +1,12 @@
 {
-    "name": "emoji",
-    "description": "",
-    "version": "0.0.1",
-    "homepage": "http://chrome.google.com/webstore",
-    "author": "ENTER YOUR NAME HERE",
+    "name": "PicMo Chrome",
+    "description": "Emoji picker from Chrome built off of PicMo",
+    "version": "0.1.7",
+    "homepage": "https://github.com/mtimkovich/picmo-chrome",
+    "author": "Max Timkovich",
     "repository": {
         "type": "git",
-        "url": "ENTER GIT REPO URL"
+        "url": "https://github.com/mtimkovich/picmo-chrome"
     },
     "scripts": {
         "start": "xt-build -e dev -w",
