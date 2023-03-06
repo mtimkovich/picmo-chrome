@@ -8,11 +8,11 @@ This is a Chrome extension to quickly search and copy emoji using the excellent 
 
 ## ✔️ Features
 
-- 🔍 Emoji search.
-- 📜 Recently used emoji.
-- ⌨️ Completely keyboard accessible.
-  - Open the picker with `Ctrl+Period`.
-  - Navigate with Tab and the arrow keys.
+- 🔍 Emoji search
+- 📜 Recently used emoji
+- ⌨️ Completely keyboard accessible
+  - Open the picker with `Ctrl+Period`
+  - Navigate with Tab and arrow keys
 
 ## 💾 Installation Methods
 
@@ -28,8 +28,8 @@ $ npm run build
 
 ## 🙏 Acknowledgements
 
-* [PicMo][picmo] for doing all the hard work.
-* [Extension CLI](https://oss.mobilefirst.me/extension-cli/).
+* [PicMo][picmo] for doing all the hard work
+* [Extension CLI](https://oss.mobilefirst.me/extension-cli/)
 
 ## 🤠 Author
 
