@@ -1,6 +1,8 @@
-# <img src="public/icons/icon_48.png" width="45" align="left"> Emoji Button Chrome
+# <img src="assets/img/48x48.png" width="45" align="left"> PicMo Chrome
 
-This is a Chrome extension to quickly search and copy emoji using the excellent [Emoji Button][eb] tool.
+This is a Chrome extension to quickly search and copy emoji using the excellent [PicMo][picmo] tool.
+
+*This is project is not affiliated with PicMo, I'm just a big fan.*
 
 <img src="img/preview.png" width="400px">
 
@@ -11,10 +13,6 @@ This is a Chrome extension to quickly search and copy emoji using the excellent 
 - ⌨️ Completely keyboard accessible.
   - Open the picker with `Ctrl+Period`.
   - Navigate with Tab and the arrow keys.
-- 🐦 Choose between native or Twitter style emoji.
-- 💽 Completely open source, so I won't be selling your personal data.
-  - Only requires the `clipboardWrite` and `storage` permissions.
-- 🐭 Only ~170 KB in size.
 
 ## 💾 Installation Methods
 
@@ -28,20 +26,13 @@ $ npm install
 $ npm run build
 ```
 
-## Contribution
-
-Suggestions and pull requests are welcomed!
-
 ## 🙏 Acknowledgements
 
-* [Emoji Button][eb] for doing all the hard work.
-* [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli).
-* I stole some ideas from [chromoji](https://github.com/smeeckaert/chromoji).
-
-If you're on Windows, I recommend [Twemoji for Chrome](https://chrome.google.com/webstore/detail/twemoji-for-chrome/fopgafjdjlongoeblobbafbnapafcicg?hl=en) to replace the horrific Windows emoji.
+* [PicMo][picmo] for doing all the hard work.
+* [Extension CLI](https://oss.mobilefirst.me/extension-cli/).
 
 ## 🤠 Author
 
 Max Timkovich
 
-[eb]: https://emoji-button.js.org/
+[picmo]: https://picmojs.com/
