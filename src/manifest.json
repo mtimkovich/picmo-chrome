@@ -1,0 +1,33 @@
+{
+    "name": "PicMo Chrome",
+    "short_name": "PicMo Emoji Selector",
+    "description": "Emoji selector for Chrome",
+    "homepage_url": "https://github.com/mtimkovich/emoji-button-chrome",
+    "version": "0.1.7",
+    "version_name": "0.1.7",
+    "manifest_version": 3,
+    "default_locale": "en",
+    "minimum_chrome_version": "88",
+    "permissions": [
+        "clipboardWrite"
+    ],
+    "icons": {
+        "128": "assets/img/128x128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "assets/img/16x16.png",
+            "32": "assets/img/32x32.png",
+            "48": "assets/img/48x48.png"
+        },
+        "default_title": "Picmo Button",
+        "default_popup": "popup.html"
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Period"
+            }
+        }
+    }
+}

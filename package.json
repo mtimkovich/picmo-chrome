@@ -1,25 +1,52 @@
 {
-  "name": "emoji-button-chrome",
-  "version": "0.1.6",
-  "description": "A Chrome emoji picker built off of Emoji Button.",
-  "private": true,
-  "scripts": {
-    "clean": "rm -r build; exit 0",
-    "watch": "npm run clean && webpack --mode=development --watch --config config/webpack.config.js",
-    "build": "npm run clean && webpack --mode=production --config config/webpack.config.js",
-    "zip": "npm run clean; rm *.zip; npm run build && cd build && zip -r ../$npm_package_name-$npm_package_version.zip *"
-  },
-  "devDependencies": {
-    "copy-webpack-plugin": "^6.4.1",
-    "css-loader": "^4.3.0",
-    "file-loader": "^6.2.0",
-    "mini-css-extract-plugin": "^0.10.1",
-    "size-plugin": "^2.0.2",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-merge": "^5.7.3"
-  },
-  "dependencies": {
-    "@joeattardi/emoji-button": "^4.6.0"
-  }
+    "name": "emoji",
+    "description": "",
+    "version": "0.0.1",
+    "homepage": "http://chrome.google.com/webstore",
+    "author": "ENTER YOUR NAME HERE",
+    "repository": {
+        "type": "git",
+        "url": "ENTER GIT REPO URL"
+    },
+    "scripts": {
+        "start": "xt-build -e dev -w",
+        "start:firefox": "xt-build -e dev -p firefox -w",
+        "build": "xt-build -e prod",
+        "build:firefox": "xt-build -e prod -p firefox",
+        "clean": "xt-clean",
+        "docs": "xt-docs",
+        "test": "xt-test",
+        "coverage": "nyc --reporter=lcov npm run test",
+        "sync": "xt-sync"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env"
+        ]
+    },
+    "eslintIgnore": [
+        "test/**/*"
+    ],
+    "devDependencies": {
+        "extension-cli": "latest"
+    },
+    "xtdocs": {
+        "source": {
+            "include": [
+                "README.md",
+                "src"
+            ]
+        }
+    },
+    "xtbuild": {
+        "js_bundles": [
+            {
+                "name": "popup",
+                "src": "./src/**/*.js"
+            }
+        ]
+    },
+    "dependencies": {
+        "picmo": "^5.8.1"
+    }
 }
