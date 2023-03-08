@@ -33,4 +33,4 @@ function main(items) {
     });
 }
 
-chrome.storage.local.get(null, main);
+chrome.storage.sync.get({ style: 'native' }, main);

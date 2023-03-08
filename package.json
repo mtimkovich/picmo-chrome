@@ -1,8 +1,8 @@
 {
     "name": "PicMo Chrome",
     "description": "Emoji picker from Chrome built off of PicMo",
-    "version": "0.1.8",
-    "homepage": "https://github.com/mtimkovich/picmo-chrome",
+    "version": "0.1.9",
+    "homepage": "https://chrome.google.com/webstore/detail/picmo-chrome/ehmacpiolcofcljbiogbjbojdeiiekdi",
     "author": "Max Timkovich",
     "repository": {
         "type": "git",

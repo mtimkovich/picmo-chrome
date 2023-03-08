@@ -17,7 +17,7 @@ This is a Chrome extension to quickly search and copy emoji using the excellent 
 
 ## 💾 Installation Methods
 
-1. [Download from the Chrome Web Store.](https://chrome.google.com/webstore/detail/emoji-button-chrome/ehmacpiolcofcljbiogbjbojdeiiekdi)
+1. [Download from the Chrome Web Store.](https://chrome.google.com/webstore/detail/picmo-chrome/ehmacpiolcofcljbiogbjbojdeiiekdi)
 2. Download the latest version from [releases](https://github.com/mtimkovich/picmo-chrome/releases).
 3. Build from source:
 
