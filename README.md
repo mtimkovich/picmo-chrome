@@ -13,7 +13,7 @@ This is a Chrome extension to quickly search and copy emoji using the excellent 
 - ⌨️ Completely keyboard accessible
   - Open the picker with `Ctrl+Period`
   - Navigate with Tab and arrow keys
-- 🐦 Choose between native and Twitter style emoji
+- 🐦 Choose between native and Twitter-style emoji
 
 ## 💾 Installation Methods
 
